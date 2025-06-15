@@ -127,4 +127,8 @@ target_link_libraries(add_stgfb zconfls zcom)
 add_executable(sec_om sec_om.f90)
 target_link_libraries(sec_om zconfls zcom)
 
+# convert formatted frm files to unformatted w files
+add_executable(frm_w frm_w.f90)
+target_link_libraries(frm_w radial)
+
 
